@@ -1,0 +1,15 @@
+# Java/Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Logs & Temp
+*.log
+temp/
