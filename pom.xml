@@ -24,6 +24,7 @@
         <module>prescription-service</module>
         <module>discovery-server</module>
         <module>inventory-service</module>
+        <module>api-gateway</module>
     </modules>
 
     <dependencyManagement>
