@@ -60,6 +60,7 @@ public class PrescriptionController {
 
     // KEEP ONLY THIS POST METHOD
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     @CircuitBreaker(name = "inventoryCheck", fallbackMethod = "handleInventoryFailure")
     public Prescription createPrescription(@RequestBody Prescription rx) {
         String medName = rx.getMedications().get(0).getName();
